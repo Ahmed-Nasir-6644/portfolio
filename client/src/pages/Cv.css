@@ -1,0 +1,165 @@
+/* Cv.css */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.cv-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Sidebar */
+.cv-sidebar {
+  width: 280px;
+  background-color: #101b2b;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cv-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00c6ff;
+  margin-bottom: 1rem;
+}
+
+.cv-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #00c6ff;
+}
+
+.cv-download {
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background: #00c6ff;
+  color: black;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.cv-download:hover {
+  background: #00b0e4;
+}
+
+.cv-skills {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.cv-skills h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.7rem;
+  color: #ffffff;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  background-color: #1e2a38;
+  margin: 5px 0;
+  padding: 6px 10px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  color: #cceeff;
+  transition: background 0.3s ease;
+}
+
+.skills-list li:hover {
+  background-color: #2e3e4f;
+}
+
+/* Main content */
+.cv-container {
+  flex: 1;
+  padding: 3rem 4rem;
+  overflow-y: auto;
+}
+
+.cv-heading {
+  font-size: 2.5rem;
+  color: #00c6ff;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.cv-section {
+  margin-bottom: 2rem;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 198, 255, 0.15);
+}
+
+.cv-section h2 {
+  font-size: 1.5rem;
+  color: #00c6ff;
+  margin-bottom: 0.7rem;
+}
+
+.cv-section p,
+.cv-section ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e1e1e1;
+}
+
+.cv-section ul {
+  padding-left: 1rem;
+}
+
+.cv-section li {
+  margin-bottom: 0.5rem;
+}
+
+/* Animation */
+.fade-in {
+  animation: fadeInUp 0.7s ease-in-out both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .cv-wrapper {
+    flex-direction: column;
+  }
+
+  .cv-sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .cv-container {
+    padding: 2rem 1.5rem;
+  }
+}

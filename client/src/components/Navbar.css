@@ -1,0 +1,92 @@
+/* Navbar.css */
+
+.navbar {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.navbar-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #61dafb;
+}
+
+.nav-link.active {
+  color: #ffffff;
+  font-weight: bold;
+  border-bottom: 2px solid #61dafb;
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hide checkbox */
+.nav-toggle {
+  display: none;
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .nav-toggle:checked ~ .navbar-links {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

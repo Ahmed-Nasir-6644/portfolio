@@ -1,0 +1,156 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.home {
+  flex: 1;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+
+  /* 🚀 Dashing animated bluish gradient */
+  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #004e92);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+}
+
+.section-heading-link {
+  color: #00c6ff;
+  text-decoration: none;
+}
+
+.section-heading-link:hover {
+  color: #00e0ff;
+  text-decoration: none;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #00c6ff;
+  box-shadow: 0 0 15px rgba(0, 198, 255, 0.3);
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin: 0.5rem 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-icons a {
+  color: #00c6ff;
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+}
+
+.btn {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.6rem;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Project Cards */
+.projects-preview {
+  margin-left: 4rem;
+  margin-top: 4rem;
+}
+
+.projects-preview h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #00c6ff;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
