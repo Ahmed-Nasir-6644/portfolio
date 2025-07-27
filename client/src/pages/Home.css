@@ -1,41 +1,9 @@
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-    padding: 0 1rem;
-  }
-
-  .projects-preview {
-    margin-left: 0;
-    margin-top: 2rem;
-    padding: 0 1rem;
-  }
-
-  .project-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .project-card {
-    width: 90%;
-  }
-
-  .btn {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
-  }
-}
-
-
+/* Base layout */
 .page-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-
 
 .home {
   flex: 1;
@@ -47,7 +15,6 @@
   padding: 2rem;
   color: white;
 
-  /* 🚀 Dashing animated bluish gradient */
   background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #004e92);
   background-size: 400% 400%;
   animation: gradientMove 12s ease infinite;
@@ -62,6 +29,8 @@
   color: #00e0ff;
   text-decoration: none;
 }
+
+/* Hero Section */
 .hero {
   display: flex;
   flex-direction: column;
@@ -87,6 +56,7 @@
 .hero p {
   font-size: 1.2rem;
   color: #bbb;
+  margin: 0 1rem;
 }
 
 .social-icons {
@@ -121,10 +91,10 @@
   transform: scale(1.05);
 }
 
-/* Project Cards */
+/* Projects Preview */
 .projects-preview {
-  margin-left: 4rem;
   margin-top: 4rem;
+  margin-left: 4rem;
 }
 
 .projects-preview h2 {
@@ -163,7 +133,7 @@
   color: #ccc;
 }
 
-/* Fade animation */
+/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -184,5 +154,41 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+/* ✅ Mobile Optimizations */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .projects-preview {
+    margin-left: 0;
+    margin-top: 2rem;
+    padding: 0 1rem;
+  }
+
+  .project-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .home {
+    padding: 1rem;
   }
 }
