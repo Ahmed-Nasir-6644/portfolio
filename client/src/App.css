@@ -2,10 +2,13 @@
 
 html, body, #root {
   height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* ✅ Prevent horizontal scroll on mobile */
 }
 
 body {
   margin: 0;
+  padding: 0; /* ✅ Ensure no unintended spacing */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: #f0f0f0;
