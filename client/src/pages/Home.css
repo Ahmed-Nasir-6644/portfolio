@@ -159,6 +159,16 @@
 
 /* ✅ Mobile Optimizations */
 @media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .hero {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
   .hero h1 {
     font-size: 2rem;
   }
@@ -170,7 +180,8 @@
 
   .projects-preview {
     margin-left: 0;
-    margin-top: 2rem;
+    margin-top: 0;
+    width: 100%;
     padding: 0 1rem;
   }
 
@@ -180,15 +191,12 @@
   }
 
   .project-card {
-    width: 90%;
+    width: 100%;
+    max-width: 320px;
   }
 
   .btn {
     padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
-  }
-
-  .home {
-    padding: 1rem;
+    font-size: 0.9rem
   }
 }
