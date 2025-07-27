@@ -13,6 +13,7 @@
   animation: gradientMove 15s ease infinite;
   color: white;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .projects-heading {
@@ -33,6 +34,7 @@
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0, 198, 255, 0.2);
   transition: transform 0.3s ease;
+  box-sizing: border-box;
 }
 
 .project-card:hover {
@@ -75,4 +77,44 @@
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+/* ✅ Mobile Styles */
+@media (max-width: 768px) {
+  .projects-page {
+    padding: 2rem 1rem;
+  }
+
+  .projects-heading {
+    font-size: 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .project-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .project-card p {
+    font-size: 0.95rem;
+  }
+
+  .tech-tags span {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .project-links a {
+    font-size: 0.9rem;
+  }
 }

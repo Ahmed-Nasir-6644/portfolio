@@ -1,9 +1,10 @@
-/* Cv.css */
+/* Base styles */
 .page-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
+
 .cv-wrapper {
   flex: 1;
   display: flex;
@@ -147,7 +148,7 @@
   }
 }
 
-/* Responsive */
+/* ✅ Responsive for tablets and mobile */
 @media screen and (max-width: 768px) {
   .cv-wrapper {
     flex-direction: column;
@@ -157,9 +158,94 @@
     width: 100%;
     border-right: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .cv-photo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .cv-name {
+    font-size: 1.3rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .cv-download {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.9rem;
+  }
+
+  .cv-skills {
+    margin-top: 1rem;
+    width: 100%;
   }
 
   .cv-container {
     padding: 2rem 1.5rem;
+  }
+
+  .cv-heading {
+    font-size: 2rem;
+  }
+
+  .cv-section {
+    padding: 1rem 1rem;
+  }
+
+  .cv-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .cv-section p,
+  .cv-section ul {
+    font-size: 0.95rem;
+  }
+}
+
+/* ✅ Extra small screens (phones ≤ 480px) */
+@media screen and (max-width: 480px) {
+  .cv-photo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .cv-name {
+    font-size: 1.1rem;
+  }
+
+  .cv-download {
+    font-size: 0.85rem;
+  }
+
+  .cv-skills h3 {
+    font-size: 1rem;
+  }
+
+  .skills-list li {
+    font-size: 0.85rem;
+    padding: 5px 8px;
+  }
+
+  .cv-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .cv-heading {
+    font-size: 1.7rem;
+  }
+
+  .cv-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .cv-section p,
+  .cv-section ul {
+    font-size: 0.9rem;
   }
 }
