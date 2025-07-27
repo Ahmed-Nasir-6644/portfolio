@@ -8,12 +8,6 @@ import Skills from './pages/Skills';
 import Cv from './pages/Cv';
 import Navbar from './components/Navbar';
 
-// Admin Pages
-import AdminHome from './pages/AdminHome';
-import UpdateProjects from './pages/UpdateProjects';
-import UpdateSkills from './pages/UpdateSkills';
-import UpdateCv from './pages/UpdateCv';
-import AdminLogin from './pages/AdminLogin'
 
 const AppWrapper = () => {
   const location = useLocation();
@@ -30,13 +24,6 @@ const AppWrapper = () => {
         <Route path='/skills' element={<Skills />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cv" element={<Cv />} />
-
-        {/* Admin Routes */}
-        <Route path="/admin-login" element={<AdminLogin />} />
-        <Route path="/admin" element={<AdminHome />} />
-        <Route path="/admin/projects" element={<UpdateProjects />} />
-        <Route path="/admin/skills" element={<UpdateSkills />} />
-        <Route path="/admin/cv" element={<UpdateCv />} />
       </Routes>
     </>
   );
